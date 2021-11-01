@@ -1,5 +1,5 @@
 @import '../fontawesome/css/all.css';
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -189,7 +189,270 @@ body {
   background-color: white;
 }
 body .wrapper {
-  width: 85vw;
+  width: 80vw;
   margin: 0 auto;
   font-family: Roboto Condensed;
+}
+
+.site-header {
+  background-color: #292929;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+.site-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.site-header .wrapper .navigation-left ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.site-header .wrapper .navigation-left li {
+  list-style: none outside;
+}
+.site-header .wrapper .navigation-left li:not(last-child) {
+  margin-right: 1.5rem;
+}
+.site-header .wrapper .navigation-left a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-out;
+}
+.site-header .wrapper .navigation-left a:hover {
+  color: #2c96d3;
+}
+.site-header .wrapper .site-title {
+  color: white;
+  text-decoration: none;
+  font-size: 150%;
+  font-weight: bold;
+  font-family: Fruktur;
+  margin-right: 2rem;
+  transition: color 0.3s ease-out;
+}
+.site-header .wrapper .site-title:hover {
+  color: #2fd5ff;
+}
+.site-header .wrapper .navigation-right ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.site-header .wrapper .navigation-right li {
+  list-style: none outside;
+}
+.site-header .wrapper .navigation-right li:not(last-child) {
+  margin-right: 1.5rem;
+}
+.site-header .wrapper .navigation-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-out;
+}
+.site-header .wrapper .navigation-right a:hover {
+  color: #2c96d3;
+}
+
+.banner {
+  background-image: url(https://wallpapercave.com/wp/RKyfEEh.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 6rem 2rem 18rem 2rem;
+}
+.banner::before {
+  display: block;
+  content: "";
+  background: rgba(40, 40, 40, 0.95);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.banner .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.banner .wrapper .box {
+  flex-basis: 100%;
+  color: white;
+  z-index: 21;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner .wrapper .box .desc2 {
+  font-weight: bold;
+  font-size: 400%;
+  padding-right: 2rem;
+}
+.banner .wrapper .box .desc1 {
+  font-weight: bold;
+}
+.banner .wrapper .box .desc1 a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+.banner .wrapper .box .desc1 a:hover {
+  color: #2fd5ff;
+}
+.banner .wrapper .media {
+  position: relative;
+  flex-basis: 100%;
+  z-index: 20;
+}
+.banner .wrapper .media img {
+  display: block;
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  background-color: #323232;
+  background-image: url(https://thumbs.dreamstime.com/b/seamless-black-white-texture-contour-pattern-running-shoes-sneaker-seamless-black-white-texture-100576255.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  position: relative;
+  height: 200vh;
+}
+.content::before {
+  display: block;
+  content: "";
+  background: rgba(40, 40, 40, 0.95);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.content .wrapper {
+  position: relative;
+  top: -2rem;
+  background-color: white;
+  z-index: 30;
+  border-radius: 0.2rem;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.content .service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .service .box {
+  text-align: center;
+  padding: 2rem;
+}
+.content .service .box i {
+  color: #2c96d3;
+  font-size: 150%;
+}
+.content .service .box .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 105%;
+}
+.content .service .box .desc {
+  color: #5e5e5e;
+  font-size: 80%;
+}
+.content .deal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content .deal .description {
+  flex-basis: 50%;
+  text-align: center;
+  padding: 0 2rem;
+}
+.content .deal .description .title {
+  font-weight: bold;
+  font-size: 105%;
+}
+.content .deal .description .desc {
+  color: #5e5e5e;
+  font-size: 80%;
+}
+.content .deal .description .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.content .deal .description .price .new-price {
+  font-weight: bold;
+  font-size: 120%;
+  color: #2c96d3;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+.content .deal .description .price .old-price {
+  font-weight: bold;
+  font-size: 120%;
+  color: black;
+  text-decoration: line-through;
+}
+.content .deal .description .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .deal .description .date .boxi {
+  text-align: center;
+  border: 1px solid #c7c7c7;
+  border-radius: 0.2rem;
+  padding: 0.3rem 0.6rem;
+}
+.content .deal .description .date .boxi .number {
+  font-weight: bold;
+}
+.content .deal .description .date .boxi .text {
+  font-size: 85%;
+  color: #3d3d3d;
+}
+.content .deal .media {
+  flex-basis: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.content .deal .media:before {
+  display: block;
+  content: "";
+  padding-top: 100%;
+}
+.content .deal .media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
