@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&display=swap');
+
+html {
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@media screen and (max-width: 499px) { html { font-size: 14px } }
+@media screen and (min-width: 500px) { html { font-size: 16px } }
+@media screen and (min-width: 600px) { html { font-size: 18px } }
+@media screen and (min-width: 800px) { html { font-size: 20px } }
+@media screen and (min-width: 1300px) { html { font-size: 22px } }
+@media screen and (min-width: 1800px) { html { font-size: 24px } }
+
+body{
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: 1em/1.2 Titillium Web, Roboto Condensed, serif;
+    margin: 1em 0 0 0;
+    padding: 0;
+}
+
+$headings: (h1: 2.2rem, h2: 2.0rem, h3: 1.8rem, h4: 1.6rem, h5: 1.4rem, h6: 1.2rem);
+
+@each $heading, $size in $headings {
+    #{$heading} { font-size: $size; }
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 2.0rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.4rem; }
+h6 { font-size: 1.2rem; }
+
+p {
+    padding: 0;
+    /* margin-top: 1.5rem; */
+}
+
+ul, ol, dl {
+    margin: 0 0 1rem 0;
+}
+
+ul li, ol li{
+    list-style-position: inside;
+}
+
+ul ul {
+    margin-top: 1rem;
+}
+
+ul li{
+    list-style-type: square;
+}
+
+ul ul li {
+    list-style-type: disc;
+}
+
+ul ul ul li {
+    list-style-type: circle;
+}
+
+blockquote {
+    border-left: 3px solid rgb(221,221,221);
+    padding: 0.5rem 0.5rem;
+    margin-left: 3rem;
+    color: #444;
+
+    p {
+        padding: 0.5em 1em;
+        font-style: italic;
+    }
+
+    .author {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 500px) { 
+	blockquote {
+		width: 40%;
+	}
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 1.5rem;
+    border: 1px solid gray;
+    border-spacing: 0;
+}
+
+table td, table th{
+    border: 1px solid gray;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+table thead th {
+    background-color: rgb(199, 199, 199);
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(230, 230, 230);
+}
+
+table tr:hover td{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+hr {
+    margin: 1.2rem 0;
+}
