@@ -1,11 +1,11 @@
 .content {
     background-color: #323232;
-    background-image: url(https://thumbs.dreamstime.com/b/seamless-black-white-texture-contour-pattern-running-shoes-sneaker-seamless-black-white-texture-100576255.jpg);
+    // background-image: url(https://thumbs.dreamstime.com/b/seamless-black-white-texture-contour-pattern-running-shoes-sneaker-seamless-black-white-texture-100576255.jpg);
+    background-image: url(https://wallpaperaccess.com/full/220646.jpg);
     background-position: center;
     background-size: contain;
     background-repeat: repeat;
     position: relative;
-    height: 200vh;
 
     &::before {
         display: block;
@@ -52,15 +52,10 @@
                 color: rgb(94, 94, 94);
                 font-size: 80%;
             }
-
-            &:not(last-child){
-                // border-right: 1px solid rgb(185, 185, 185);
-            }
         }
     }
 
     .deal {
-        // border-top:  1px solid rgb(185, 185, 185);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -148,6 +143,319 @@
                 transform: translate(-50%,-50%);
             }
 
+        }
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+
+        .start-box {
+            text-align: center;
+            background-color: #292929;
+            padding: 1rem;
+
+            i {
+                color: #2c96d3;
+                font-size: 150%;
+            }
+
+            .title {
+                font-size: 110%;
+                font-weight: bold;
+                color: white;
+            }
+
+            .desc {
+                color: rgb(110, 110, 110);
+                font-size: 80%;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                font-size: 85%;
+                margin-top: 1rem;
+
+                transition: color 0.3s ease-out;
+
+                    &:hover{
+                        color: #2fd5ff;
+                    }
+            }
+        }
+
+        .box-product {
+
+            padding: 1rem 0.8rem 0.5rem 0.8rem;
+
+            .media {
+                position: relative;
+                overflow: hidden;
+    
+                &:before {
+                    display: block;
+                    content: '';
+                    padding-top: 56.25%;
+                }
+    
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+
+            .title {
+                font-size: 110%;
+                font-weight: bold;
+                margin: 0;
+                padding-top: 1rem;
+            }
+
+            .price {
+                font-weight: bold;
+                font-size: 105%;
+                color: #2c96d3;
+                position: relative;
+                top: -0.5rem;
+            }
+        }
+
+        .size-box {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            background-image: url(https://wallpaper.dog/large/5251.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            color: white;
+
+            .cap {
+                font-size: 80%;
+            }
+
+            .title {
+                font-size: 110%;
+                font-weight: bold;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                font-size: 85%;
+                margin-top: 0.5rem;
+
+                transition: color 0.3s ease-out;
+
+                    &:hover{
+                        color: #2fd5ff;
+                    }
+            }
+        }
+
+        .more {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            text-align: center;
+            padding: 0.5rem;
+            border-top: 1px solid rgb(190, 190, 190);
+            border-bottom: 1px solid rgb(190, 190, 190);
+
+            .title {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 100%;
+                font-weight: bold;
+                color: black;
+                transition: color 0.3s ease-out;
+
+                &:hover{
+                    color: #2c96d3;
+                }
+
+                i {
+                    margin-right: 0.3rem;
+                }
+            }
+        }
+
+        .social-box-twitter {
+            text-align: center;
+            color: white;
+            background-color: #44B1E9;
+            padding: 0.5rem;
+            border-bottom: 1px solid rgb(190, 190, 190);
+
+            i {
+                display: inline-block;
+                margin-bottom: 1rem;
+            }
+
+            .cap {
+                font-size: 105%;
+                font-weight: bold;
+            }
+
+            .followers {
+                font-size: 110%;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+            
+            .hashtag {
+                text-decoration: none;
+                color: white;
+                font-size: 85%;
+            }
+        }
+
+        .info {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            padding: 1rem;
+            border-bottom: 1px solid rgb(190, 190, 190);
+
+            .desc {
+                color: gray;
+                font-size: 70%;
+                margin-bottom: 1rem;
+            }
+
+            .opinion {
+                font-size: 85%;
+                margin-bottom: 1.5rem;
+            }
+
+            .mention {
+                display: block;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 80%;
+            }
+        }
+
+        .social-box-facebook {
+            text-align: center;
+            color: white;
+            background-color: rgb(38, 62, 181);
+            padding: 0.5rem;
+            border-bottom: 1px solid rgb(190, 190, 190);
+
+            i {
+                display: inline-block;
+                margin-bottom: 1rem;
+            }
+
+            .cap {
+                font-size: 105%;
+                font-weight: bold;
+            }
+
+            .followers {
+                font-size: 110%;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+            
+            .hashtag {
+                text-decoration: none;
+                color: white;
+                font-size: 85%;
+            }
+        }
+
+        .size-box2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-image: url(https://images.unsplash.com/photo-1518002171953-a080ee817e1f?ixlib=rb-1.2.1&w=1000&q=80);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            color: white;
+
+            .cap {
+                font-size: 80%;
+            }
+
+            .title {
+                font-size: 110%;
+                font-weight: bold;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                font-size: 85%;
+                margin-top: 0.5rem;
+
+                transition: color 0.3s ease-out;
+
+                    &:hover{
+                        color: #2fd5ff;
+                    }
+            }
+        }
+    }
+
+    .marketing{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0;
+
+        .box {
+            padding: 0.5rem;
+
+            .media {
+                position: relative;
+                overflow: hidden;
+    
+                &:before {
+                    display: block;
+                    content: '';
+                    padding-top: 56.25%;
+                }
+    
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    opacity: 0.1;
+                    transition: opacity 0.3s ease-out;;
+
+                }
+
+                &:hover img {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
