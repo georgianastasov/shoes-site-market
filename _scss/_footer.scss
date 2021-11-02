@@ -1,0 +1,131 @@
+.site-footer {
+    padding: 2rem;
+    background-color: #202020;
+
+    .wrapper {
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .start-box{
+            flex-basis: 40%;
+            z-index: 3;
+
+            .title {
+                text-decoration: none;
+                color: white;
+                font-family: Fruktur;
+                font-weight: bold;
+                font-size: 130%;
+                transition: color 0.3s ease-out;
+                margin-bottom: 1rem;
+
+                &:hover{
+                    color: #2fd5ff;
+                }
+            }
+
+            .desc {
+                font-size: 80%;
+                color: rgb(170, 170, 170);
+                margin-bottom: 1rem;
+            }
+
+            .links {
+
+                a {
+                    color: white;
+                    font-size: 90%;
+                    margin-right: 0.2rem;
+                    transition: color 0.3s ease-out;
+
+                    &:hover{
+                        color: #2c96d3;
+                    }
+                }
+            }
+        }
+
+        .middle-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-basis: 30%;
+
+            .box {
+                flex-basis: 40%;
+
+                .title {
+                    color: white;
+                    font-weight: bold;
+                    font-size: 110%;
+                }
+
+                a {
+                    display: block;
+                    color: rgb(170, 170, 170);
+                    transition: color 0.3s ease-out;
+                    font-size: 90%;
+
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .last-box {
+            flex-basis: 15%;
+
+            .links {
+                margin-bottom: 2rem;
+
+                a {
+                    color: white;
+                    i {
+                        margin-right: 0.2rem;
+                    }
+                }
+
+                .fa-facebook-f:hover {
+                    color: blue;
+                }
+
+                .fa-twitter:hover {
+                    color: cyan;
+                }
+
+                .fa-youtube:hover {
+                    color: red;
+                }
+
+                .fa-linkedin-in:hover {
+                    color: royalblue;
+                }
+
+                .fa-google-plus-g:hover {
+                    color: tomato;
+                }
+
+            }
+
+            .box {
+                text-align: end;
+
+                .desc {
+                    color: rgb(170, 170, 170);
+                    font-size: 70%;
+                    position: relative;
+                    top: 0.4rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 70%;
+                }
+            }
+        }
+    }
+}
