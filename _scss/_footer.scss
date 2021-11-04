@@ -1,5 +1,5 @@
 .site-footer {
-    padding: 2rem;
+    padding: 1rem;
     background-color: #202020;
 
     .wrapper {
@@ -7,10 +7,19 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+
+        @include mqq(850px, min){
+            flex-wrap: nowrap;
+        }
 
         .start-box{
-            flex-basis: 40%;
+            flex-basis: 100%;
             z-index: 3;
+
+            @include mqq(850px, min){
+                flex-basis: 40%;
+            }
 
             .title {
                 text-decoration: none;
@@ -51,10 +60,20 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-basis: 30%;
+            flex-basis: 100%;
+            margin-top: 3rem;
+
+            @include mqq(850px, min){
+                flex-basis: 30%;
+                margin-top: 0;
+            }
 
             .box {
-                flex-basis: 40%;
+                flex-basis: 50%;
+
+                @include mqq(850px, min){
+                    flex-basis: 40%;
+                }
 
                 .title {
                     color: white;
@@ -76,7 +95,13 @@
         }
 
         .last-box {
-            flex-basis: 15%;
+            flex-basis: 100%;
+            margin-top: 3rem;
+
+            @include mqq(850px, min){
+                flex-basis: 20%;
+                margin-top: 0;
+            }
 
             .links {
                 margin-bottom: 2rem;

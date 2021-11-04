@@ -37,8 +37,20 @@
 
             .desc2{
                 font-weight: bold;
-                font-size: 400%;
-                padding-right: 2rem;
+                font-size: 250%;
+
+                @include mqq(400px, min){
+                    font-size: 300%;
+                }
+
+                @include mqq(600px, min){
+                    font-size: 350%;
+                }
+
+                @include mqq(800px, min){
+                    font-size: 400%;
+                    padding-right: 2rem;
+                }
             }
 
             .desc1{
@@ -59,6 +71,7 @@
         }
 
         .media {
+            margin-top: 2rem;
             position: relative;
             flex-basis: 100%;
             z-index: 20;

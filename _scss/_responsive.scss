@@ -1,0 +1,13 @@
+@mixin mqq($width, $type) { 
+    @if $type == max {
+        $width: $width - 1px;
+    }
+
+    $parent: &;
+
+    @media screen and (#{$type}-width: $width){
+        @at-root #{$parent} {
+            @content;
+        }
+    }
+}

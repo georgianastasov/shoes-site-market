@@ -32,8 +32,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
+
+        @include mqq(930px, min){
+            flex-wrap: nowrap;
+        }
 
         .box {
+            flex-basis: 100%;
             text-align: center;
             padding: 2rem;
 
@@ -61,14 +67,29 @@
         align-items: center;
         flex-wrap: wrap;
 
+        border-top: 1px solid rgb(185, 185, 185);
+
+        @include mqq(930px, min){
+            border-top: none;
+        }
+
         .description{
-            flex-basis: 50%;
+            flex-basis: 100%;
             text-align: center;
             padding: 0 2rem;
+
+            @include mqq(930px, min){
+                flex-basis: 50%;
+            }
 
             .title {
                 font-weight: bold;
                 font-size: 105%;
+                margin-top: 3rem;
+
+                @include mqq(930px, min){
+                    margin-top: 0;
+                }
             }
 
             .desc {
@@ -123,9 +144,16 @@
         }
 
         .media {
-            flex-basis: 50%;
+            flex-basis: 100%;
             position: relative;
             overflow: hidden;
+            margin-top: 2rem;
+
+            
+            @include mqq(930px, min){
+                flex-basis: 50%;
+                margin-top: 0;
+            }
 
             &:before {
                 display: block;
@@ -147,9 +175,11 @@
     }
 
     .products {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 0;
+
+        @include mqq(800px, min){
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
 
         .start-box {
             text-align: center;
@@ -242,6 +272,8 @@
             align-items: center;
             padding: 1rem;
             color: white;
+
+            
 
             .cap {
                 font-size: 80%;
